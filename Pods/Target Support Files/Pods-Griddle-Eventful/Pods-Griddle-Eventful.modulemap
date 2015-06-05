@@ -1,0 +1,6 @@
+framework module Eventful {
+  umbrella header "Pods-Griddle-Eventful-umbrella.h"
+
+  export *
+  module * { export * }
+}

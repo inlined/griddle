@@ -1,0 +1,816 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		171C247D3B0060F7531CB05F /* Pods-Griddle-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E9C863224BB2E8D7E2CD4963 /* Pods-Griddle-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2498F35C9A348803E4078F18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4778C48AC1A30A80CC08660 /* Foundation.framework */; };
+		2E0B2D484F221742A8CB005F /* Pods-GriddleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 93449D3114521F4E5FB72AFF /* Pods-GriddleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3715B76C9273C67C34B622FB /* Eventful.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FB642BED5A55E646B43AAFD /* Eventful.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6446AC4E167EB37A51F569B6 /* Pods-GriddleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3D737FDB24301F3E748462 /* Pods-GriddleTests-dummy.m */; };
+		67F6E31B319725421A626BF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4778C48AC1A30A80CC08660 /* Foundation.framework */; };
+		852C5BD97A657F6109912C3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4778C48AC1A30A80CC08660 /* Foundation.framework */; };
+		8AD063D35520E3EAE1F7CB92 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899C101F172FFFD2EC8A81F6 /* Promise.swift */; };
+		90C183FFA74C233E366D471F /* Eventful.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FB642BED5A55E646B43AAFD /* Eventful.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF769FA3AD15D2C1F8D38228 /* Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27D07C01339C30964902DA /* Lock.swift */; };
+		AFF37764D9B027A0A15FD8DA /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899C101F172FFFD2EC8A81F6 /* Promise.swift */; };
+		B2E53AAF53D77B87EC20E565 /* Pods-GriddleTests-Eventful-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 358A777CBB435A2985056466 /* Pods-GriddleTests-Eventful-dummy.m */; };
+		C207FA7D1E0FE562F1EEA2BD /* Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27D07C01339C30964902DA /* Lock.swift */; };
+		C2EEDEBC072ED3A9D969AC13 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B1D9F94786C1A979A6500E /* Observable.swift */; };
+		D2BC60509E180E2C9998C8B4 /* Pods-GriddleTests-Eventful-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C58E12C1800243A1319F0596 /* Pods-GriddleTests-Eventful-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0A78AF77FE20D11860AC636 /* Pods-Griddle-Eventful-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F209AE69209EFE2BB89FDCC /* Pods-Griddle-Eventful-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3A3D0C1CB592A1AC5A3E108 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4778C48AC1A30A80CC08660 /* Foundation.framework */; };
+		E43097997E4016C67F51982A /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B1D9F94786C1A979A6500E /* Observable.swift */; };
+		ED3C1A9F43F61E536EAC5DF7 /* Pods-Griddle-Eventful-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FE29023C460C4C7C1D660 /* Pods-Griddle-Eventful-dummy.m */; };
+		F4D25DB7E99C8CB803E91396 /* Pods-Griddle-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3950B2FAECA254D9B5E94A30 /* Pods-Griddle-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15B6A699118DD5A9F8A6B44D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14A0B470B988507C05BDEF11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EE7BB575B1C8651CF2150C7;
+			remoteInfo = "Pods-Griddle-Eventful";
+		};
+		E297817E02491ADFFA46D727 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14A0B470B988507C05BDEF11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F16A925D58F0DD51091AC09B;
+			remoteInfo = "Pods-GriddleTests-Eventful";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0520FD67F6684D8B79B28802 /* Pods-GriddleTests-Eventful-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GriddleTests-Eventful-Private.xcconfig"; path = "../Pods-GriddleTests-Eventful/Pods-GriddleTests-Eventful-Private.xcconfig"; sourceTree = "<group>"; };
+		20CF6BBF37DC1A4D5C3A6897 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22CEC1737836B95284F4E2A1 /* Pods-GriddleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GriddleTests.modulemap"; sourceTree = "<group>"; };
+		270138FB79BCC5B1DE240389 /* Pods-Griddle-Eventful-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Griddle-Eventful-Private.xcconfig"; sourceTree = "<group>"; };
+		2D172068DAD58EA7ACAE717D /* Pods-GriddleTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GriddleTests-resources.sh"; sourceTree = "<group>"; };
+		2E770752EBAA33DCDDB4291E /* Pods-GriddleTests-Eventful.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-GriddleTests-Eventful.modulemap"; path = "../Pods-GriddleTests-Eventful/Pods-GriddleTests-Eventful.modulemap"; sourceTree = "<group>"; };
+		2F209AE69209EFE2BB89FDCC /* Pods-Griddle-Eventful-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Griddle-Eventful-umbrella.h"; sourceTree = "<group>"; };
+		33AA2455DD558C200D08A2C3 /* Pods-Griddle-Eventful.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Griddle-Eventful.modulemap"; sourceTree = "<group>"; };
+		358A777CBB435A2985056466 /* Pods-GriddleTests-Eventful-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-GriddleTests-Eventful-dummy.m"; path = "../Pods-GriddleTests-Eventful/Pods-GriddleTests-Eventful-dummy.m"; sourceTree = "<group>"; };
+		3735F4C08EC970EB60DE87F6 /* Pods-Griddle.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Griddle.modulemap"; sourceTree = "<group>"; };
+		3950B2FAECA254D9B5E94A30 /* Pods-Griddle-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Griddle-dummy.m"; sourceTree = "<group>"; };
+		398E81F3A1D45CA40EA4B4AC /* Pods-GriddleTests-Eventful-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-GriddleTests-Eventful-prefix.pch"; path = "../Pods-GriddleTests-Eventful/Pods-GriddleTests-Eventful-prefix.pch"; sourceTree = "<group>"; };
+		3A83307ED0D0B96AD6170618 /* Pods-GriddleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GriddleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		446A97154C2978061F42D933 /* Pods-GriddleTests-Eventful.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GriddleTests-Eventful.xcconfig"; path = "../Pods-GriddleTests-Eventful/Pods-GriddleTests-Eventful.xcconfig"; sourceTree = "<group>"; };
+		46F73AE168EEF63A7620A379 /* Eventful.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Eventful.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A67896A1F034FC0AAF11E1B /* Eventful.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Eventful.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F2E1A7535F856BE22AE5552 /* Pods-Griddle-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Griddle-frameworks.sh"; sourceTree = "<group>"; };
+		5157BCFC293ED4C0DC9F4D81 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5CD011C2BDCC2F86E32FBCDA /* Pods-Griddle-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Griddle-acknowledgements.plist"; sourceTree = "<group>"; };
+		612FABD61938BE2C21A517F7 /* Pods-Griddle-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Griddle-acknowledgements.markdown"; sourceTree = "<group>"; };
+		629C85FE59E9210376E02153 /* Pods-Griddle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Griddle.release.xcconfig"; sourceTree = "<group>"; };
+		642C17ACD3FBE9329CE395FC /* Pods-Griddle-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Griddle-environment.h"; sourceTree = "<group>"; };
+		686C5B3F4DF0033C2658EA1E /* Pods-Griddle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Griddle.debug.xcconfig"; sourceTree = "<group>"; };
+		693FE29023C460C4C7C1D660 /* Pods-Griddle-Eventful-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Griddle-Eventful-dummy.m"; sourceTree = "<group>"; };
+		6E6A6A354B0D335BB644FA17 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-GriddleTests-Eventful/Info.plist"; sourceTree = "<group>"; };
+		6FB642BED5A55E646B43AAFD /* Eventful.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Eventful.h; path = Eventful/Eventful.h; sourceTree = "<group>"; };
+		712F8D706AF28C50E71AE251 /* Pods-Griddle-Eventful.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Griddle-Eventful.xcconfig"; sourceTree = "<group>"; };
+		7D09EAC37663B5F428AD402A /* Pods-Griddle-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Griddle-resources.sh"; sourceTree = "<group>"; };
+		83DAEC86A6F640DE1A4D5959 /* Pods_Griddle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Griddle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		899C101F172FFFD2EC8A81F6 /* Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Promise.swift; path = Eventful/Promise.swift; sourceTree = "<group>"; };
+		91221D9E0C6A05A4CE29355F /* Pods-GriddleTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GriddleTests-frameworks.sh"; sourceTree = "<group>"; };
+		93449D3114521F4E5FB72AFF /* Pods-GriddleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GriddleTests-umbrella.h"; sourceTree = "<group>"; };
+		94B1D9F94786C1A979A6500E /* Observable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Observable.swift; path = Eventful/Observable.swift; sourceTree = "<group>"; };
+		ADE3B99FA83DFE5B77F24CB4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C52E35A4F8A13C260340DF22 /* Pods-GriddleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GriddleTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C58E12C1800243A1319F0596 /* Pods-GriddleTests-Eventful-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-GriddleTests-Eventful-umbrella.h"; path = "../Pods-GriddleTests-Eventful/Pods-GriddleTests-Eventful-umbrella.h"; sourceTree = "<group>"; };
+		C7F260F66CBCE90FE5142D76 /* Pods-GriddleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GriddleTests.release.xcconfig"; sourceTree = "<group>"; };
+		D18036661C39B974A43BDBAE /* Pods-GriddleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GriddleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E090C158DFFA76C9ADEF391E /* Pods-GriddleTests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GriddleTests-environment.h"; sourceTree = "<group>"; };
+		E4778C48AC1A30A80CC08660 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E9C863224BB2E8D7E2CD4963 /* Pods-Griddle-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Griddle-umbrella.h"; sourceTree = "<group>"; };
+		EDB34E41FF2BE5ECCCE78F0B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7AF99CF49233E333C4BC6FF /* Pods-Griddle-Eventful-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Griddle-Eventful-prefix.pch"; sourceTree = "<group>"; };
+		FE3D737FDB24301F3E748462 /* Pods-GriddleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GriddleTests-dummy.m"; sourceTree = "<group>"; };
+		FEAFCC067C64AC5C475BAE31 /* Pods_GriddleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GriddleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF27D07C01339C30964902DA /* Lock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Lock.swift; path = Eventful/Lock.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11CFAB485A4FF233C8608F1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67F6E31B319725421A626BF6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CCA05F462153C1924ED1298 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2498F35C9A348803E4078F18 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19BCF3D6AD2B3600BE49DC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3A3D0C1CB592A1AC5A3E108 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C42BCC383029EDFF6BAC83BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				852C5BD97A657F6109912C3F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		004D5354451FC44CCF64B4CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C977DC596CF98272353FC3F5 /* Eventful */,
+				3BFC551ECF8D7FF852AA3A2C /* Firebase */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		044144BD2F62A11600F1F8A2 /* Pods-GriddleTests */ = {
+			isa = PBXGroup;
+			children = (
+				20CF6BBF37DC1A4D5C3A6897 /* Info.plist */,
+				22CEC1737836B95284F4E2A1 /* Pods-GriddleTests.modulemap */,
+				3A83307ED0D0B96AD6170618 /* Pods-GriddleTests-acknowledgements.markdown */,
+				C52E35A4F8A13C260340DF22 /* Pods-GriddleTests-acknowledgements.plist */,
+				FE3D737FDB24301F3E748462 /* Pods-GriddleTests-dummy.m */,
+				E090C158DFFA76C9ADEF391E /* Pods-GriddleTests-environment.h */,
+				91221D9E0C6A05A4CE29355F /* Pods-GriddleTests-frameworks.sh */,
+				2D172068DAD58EA7ACAE717D /* Pods-GriddleTests-resources.sh */,
+				93449D3114521F4E5FB72AFF /* Pods-GriddleTests-umbrella.h */,
+				D18036661C39B974A43BDBAE /* Pods-GriddleTests.debug.xcconfig */,
+				C7F260F66CBCE90FE5142D76 /* Pods-GriddleTests.release.xcconfig */,
+			);
+			name = "Pods-GriddleTests";
+			path = "Target Support Files/Pods-GriddleTests";
+			sourceTree = "<group>";
+		};
+		131993381CABD86C17BCBDC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A67896A1F034FC0AAF11E1B /* Eventful.framework */,
+				46F73AE168EEF63A7620A379 /* Eventful.framework */,
+				83DAEC86A6F640DE1A4D5959 /* Pods_Griddle.framework */,
+				FEAFCC067C64AC5C475BAE31 /* Pods_GriddleTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25B3DE79FD48EFD849D20415 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BD9238A8D677870B4B79906 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3BFC551ECF8D7FF852AA3A2C /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		5BD9238A8D677870B4B79906 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E4778C48AC1A30A80CC08660 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6312DBA9ED929FCE52E15F96 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB8EB202C7D17C3EF81CFDBC /* Pods-Griddle */,
+				044144BD2F62A11600F1F8A2 /* Pods-GriddleTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BB8EB202C7D17C3EF81CFDBC /* Pods-Griddle */ = {
+			isa = PBXGroup;
+			children = (
+				EDB34E41FF2BE5ECCCE78F0B /* Info.plist */,
+				3735F4C08EC970EB60DE87F6 /* Pods-Griddle.modulemap */,
+				612FABD61938BE2C21A517F7 /* Pods-Griddle-acknowledgements.markdown */,
+				5CD011C2BDCC2F86E32FBCDA /* Pods-Griddle-acknowledgements.plist */,
+				3950B2FAECA254D9B5E94A30 /* Pods-Griddle-dummy.m */,
+				642C17ACD3FBE9329CE395FC /* Pods-Griddle-environment.h */,
+				4F2E1A7535F856BE22AE5552 /* Pods-Griddle-frameworks.sh */,
+				7D09EAC37663B5F428AD402A /* Pods-Griddle-resources.sh */,
+				E9C863224BB2E8D7E2CD4963 /* Pods-Griddle-umbrella.h */,
+				686C5B3F4DF0033C2658EA1E /* Pods-Griddle.debug.xcconfig */,
+				629C85FE59E9210376E02153 /* Pods-Griddle.release.xcconfig */,
+			);
+			name = "Pods-Griddle";
+			path = "Target Support Files/Pods-Griddle";
+			sourceTree = "<group>";
+		};
+		C4950A92F6F12DE827606B4C = {
+			isa = PBXGroup;
+			children = (
+				5157BCFC293ED4C0DC9F4D81 /* Podfile */,
+				25B3DE79FD48EFD849D20415 /* Frameworks */,
+				004D5354451FC44CCF64B4CF /* Pods */,
+				131993381CABD86C17BCBDC7 /* Products */,
+				6312DBA9ED929FCE52E15F96 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		C977DC596CF98272353FC3F5 /* Eventful */ = {
+			isa = PBXGroup;
+			children = (
+				6FB642BED5A55E646B43AAFD /* Eventful.h */,
+				FF27D07C01339C30964902DA /* Lock.swift */,
+				94B1D9F94786C1A979A6500E /* Observable.swift */,
+				899C101F172FFFD2EC8A81F6 /* Promise.swift */,
+				FA65E9673458E3BD6D1B50DC /* Support Files */,
+			);
+			path = Eventful;
+			sourceTree = "<group>";
+		};
+		FA65E9673458E3BD6D1B50DC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADE3B99FA83DFE5B77F24CB4 /* Info.plist */,
+				6E6A6A354B0D335BB644FA17 /* Info.plist */,
+				33AA2455DD558C200D08A2C3 /* Pods-Griddle-Eventful.modulemap */,
+				712F8D706AF28C50E71AE251 /* Pods-Griddle-Eventful.xcconfig */,
+				270138FB79BCC5B1DE240389 /* Pods-Griddle-Eventful-Private.xcconfig */,
+				693FE29023C460C4C7C1D660 /* Pods-Griddle-Eventful-dummy.m */,
+				F7AF99CF49233E333C4BC6FF /* Pods-Griddle-Eventful-prefix.pch */,
+				2F209AE69209EFE2BB89FDCC /* Pods-Griddle-Eventful-umbrella.h */,
+				2E770752EBAA33DCDDB4291E /* Pods-GriddleTests-Eventful.modulemap */,
+				446A97154C2978061F42D933 /* Pods-GriddleTests-Eventful.xcconfig */,
+				0520FD67F6684D8B79B28802 /* Pods-GriddleTests-Eventful-Private.xcconfig */,
+				358A777CBB435A2985056466 /* Pods-GriddleTests-Eventful-dummy.m */,
+				398E81F3A1D45CA40EA4B4AC /* Pods-GriddleTests-Eventful-prefix.pch */,
+				C58E12C1800243A1319F0596 /* Pods-GriddleTests-Eventful-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Griddle-Eventful";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5C8BCD220281FF18B9E87610 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E0B2D484F221742A8CB005F /* Pods-GriddleTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C9B2E85F58E1840BC587CCC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				171C247D3B0060F7531CB05F /* Pods-Griddle-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67A4FD3B7C0A1461975AF65A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3715B76C9273C67C34B622FB /* Eventful.h in Headers */,
+				E0A78AF77FE20D11860AC636 /* Pods-Griddle-Eventful-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E2AE425980BBC49784C7B38 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90C183FFA74C233E366D471F /* Eventful.h in Headers */,
+				D2BC60509E180E2C9998C8B4 /* Pods-GriddleTests-Eventful-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4CAB3DEB8DA6511F36F4A1EE /* Pods-Griddle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBBBBBDF61906F01B2D73246 /* Build configuration list for PBXNativeTarget "Pods-Griddle" */;
+			buildPhases = (
+				B363408D8A95F421C6B42F22 /* Sources */,
+				6CCA05F462153C1924ED1298 /* Frameworks */,
+				5C9B2E85F58E1840BC587CCC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6183D57F4F48782676117320 /* PBXTargetDependency */,
+			);
+			name = "Pods-Griddle";
+			productName = "Pods-Griddle";
+			productReference = 83DAEC86A6F640DE1A4D5959 /* Pods_Griddle.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		63A307B770999ADC11C197AF /* Pods-GriddleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19A77F7AF0CD79618C9CF9CB /* Build configuration list for PBXNativeTarget "Pods-GriddleTests" */;
+			buildPhases = (
+				DBA0F72BCF14C5841761886F /* Sources */,
+				C42BCC383029EDFF6BAC83BC /* Frameworks */,
+				5C8BCD220281FF18B9E87610 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				610D8D14AA911DB22284BCFA /* PBXTargetDependency */,
+			);
+			name = "Pods-GriddleTests";
+			productName = "Pods-GriddleTests";
+			productReference = FEAFCC067C64AC5C475BAE31 /* Pods_GriddleTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9EE7BB575B1C8651CF2150C7 /* Pods-Griddle-Eventful */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4167653F793EE7354902E028 /* Build configuration list for PBXNativeTarget "Pods-Griddle-Eventful" */;
+			buildPhases = (
+				8199998B414261A7D9FE2E99 /* Sources */,
+				C19BCF3D6AD2B3600BE49DC6 /* Frameworks */,
+				67A4FD3B7C0A1461975AF65A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Griddle-Eventful";
+			productName = "Pods-Griddle-Eventful";
+			productReference = 4A67896A1F034FC0AAF11E1B /* Eventful.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F16A925D58F0DD51091AC09B /* Pods-GriddleTests-Eventful */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0EEE19186383C92E1884CA3 /* Build configuration list for PBXNativeTarget "Pods-GriddleTests-Eventful" */;
+			buildPhases = (
+				7FA2D8EC8B2863852E5FC9C6 /* Sources */,
+				11CFAB485A4FF233C8608F1A /* Frameworks */,
+				8E2AE425980BBC49784C7B38 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GriddleTests-Eventful";
+			productName = "Pods-GriddleTests-Eventful";
+			productReference = 46F73AE168EEF63A7620A379 /* Eventful.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14A0B470B988507C05BDEF11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 0FB398DB7480F851A38B35B8 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C4950A92F6F12DE827606B4C;
+			productRefGroup = 131993381CABD86C17BCBDC7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4CAB3DEB8DA6511F36F4A1EE /* Pods-Griddle */,
+				9EE7BB575B1C8651CF2150C7 /* Pods-Griddle-Eventful */,
+				63A307B770999ADC11C197AF /* Pods-GriddleTests */,
+				F16A925D58F0DD51091AC09B /* Pods-GriddleTests-Eventful */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7FA2D8EC8B2863852E5FC9C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C207FA7D1E0FE562F1EEA2BD /* Lock.swift in Sources */,
+				E43097997E4016C67F51982A /* Observable.swift in Sources */,
+				B2E53AAF53D77B87EC20E565 /* Pods-GriddleTests-Eventful-dummy.m in Sources */,
+				8AD063D35520E3EAE1F7CB92 /* Promise.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8199998B414261A7D9FE2E99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF769FA3AD15D2C1F8D38228 /* Lock.swift in Sources */,
+				C2EEDEBC072ED3A9D969AC13 /* Observable.swift in Sources */,
+				ED3C1A9F43F61E536EAC5DF7 /* Pods-Griddle-Eventful-dummy.m in Sources */,
+				AFF37764D9B027A0A15FD8DA /* Promise.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B363408D8A95F421C6B42F22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4D25DB7E99C8CB803E91396 /* Pods-Griddle-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBA0F72BCF14C5841761886F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6446AC4E167EB37A51F569B6 /* Pods-GriddleTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		610D8D14AA911DB22284BCFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GriddleTests-Eventful";
+			target = F16A925D58F0DD51091AC09B /* Pods-GriddleTests-Eventful */;
+			targetProxy = E297817E02491ADFFA46D727 /* PBXContainerItemProxy */;
+		};
+		6183D57F4F48782676117320 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Griddle-Eventful";
+			target = 9EE7BB575B1C8651CF2150C7 /* Pods-Griddle-Eventful */;
+			targetProxy = 15B6A699118DD5A9F8A6B44D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		054CED2DCAA7CBAD9FEEFF09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		276B2273FCBA8F9DF974ACF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7F260F66CBCE90FE5142D76 /* Pods-GriddleTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GriddleTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-GriddleTests/Pods-GriddleTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_GriddleTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		35FABEE1C1BA5704AC4F4A4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 270138FB79BCC5B1DE240389 /* Pods-Griddle-Eventful-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Griddle-Eventful/Pods-Griddle-Eventful-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Griddle-Eventful/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Griddle-Eventful/Pods-Griddle-Eventful.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Eventful;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5E0FD36E3BD83F1166056D04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 686C5B3F4DF0033C2658EA1E /* Pods-Griddle.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Griddle/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Griddle/Pods-Griddle.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Griddle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8790A666236505249DBAE1CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0520FD67F6684D8B79B28802 /* Pods-GriddleTests-Eventful-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-GriddleTests-Eventful/Pods-GriddleTests-Eventful-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-GriddleTests-Eventful/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-GriddleTests-Eventful/Pods-GriddleTests-Eventful.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Eventful;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A06E6AFA3A2225C629642CD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		BE65DC331D622C5A6A8EC383 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 270138FB79BCC5B1DE240389 /* Pods-Griddle-Eventful-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Griddle-Eventful/Pods-Griddle-Eventful-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Griddle-Eventful/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Griddle-Eventful/Pods-Griddle-Eventful.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Eventful;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E68A290F650BBE5060512971 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 629C85FE59E9210376E02153 /* Pods-Griddle.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Griddle/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Griddle/Pods-Griddle.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Griddle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F0CBEB837042D5DF5FA99543 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D18036661C39B974A43BDBAE /* Pods-GriddleTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GriddleTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-GriddleTests/Pods-GriddleTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_GriddleTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F4358DAE851A2F8B829ACA4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0520FD67F6684D8B79B28802 /* Pods-GriddleTests-Eventful-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-GriddleTests-Eventful/Pods-GriddleTests-Eventful-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-GriddleTests-Eventful/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-GriddleTests-Eventful/Pods-GriddleTests-Eventful.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Eventful;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FB398DB7480F851A38B35B8 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A06E6AFA3A2225C629642CD3 /* Debug */,
+				054CED2DCAA7CBAD9FEEFF09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19A77F7AF0CD79618C9CF9CB /* Build configuration list for PBXNativeTarget "Pods-GriddleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0CBEB837042D5DF5FA99543 /* Debug */,
+				276B2273FCBA8F9DF974ACF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4167653F793EE7354902E028 /* Build configuration list for PBXNativeTarget "Pods-Griddle-Eventful" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE65DC331D622C5A6A8EC383 /* Debug */,
+				35FABEE1C1BA5704AC4F4A4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0EEE19186383C92E1884CA3 /* Build configuration list for PBXNativeTarget "Pods-GriddleTests-Eventful" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4358DAE851A2F8B829ACA4E /* Debug */,
+				8790A666236505249DBAE1CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBBBBBDF61906F01B2D73246 /* Build configuration list for PBXNativeTarget "Pods-Griddle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E0FD36E3BD83F1166056D04 /* Debug */,
+				E68A290F650BBE5060512971 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14A0B470B988507C05BDEF11 /* Project object */;
+}

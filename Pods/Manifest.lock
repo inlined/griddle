@@ -1,0 +1,13 @@
+PODS:
+  - Eventful (0.0.1)
+  - Firebase (2.3.1)
+
+DEPENDENCIES:
+  - Eventful (>= 0.0.1)
+  - Firebase (>= 2.3.1)
+
+SPEC CHECKSUMS:
+  Eventful: fc8ab85aff49c3a0ada10f648a3eacf2b51ffd40
+  Firebase: 462795adf92029ddb97777660627f5dd4fd59876
+
+COCOAPODS: 0.37.2
