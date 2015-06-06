@@ -10,8 +10,10 @@ import Foundation
 
 public protocol PromiseBase {
   typealias ContinueWith
-  typealias SelfType
-  func always(block: (ContinueWith!, NSError?)->()) -> SelfType
+  var val: ContinueWith! { get }
+  var err: NSError? { get }
+  var cancelled: Bool { get }
+  func always(block: (Promise<ContinueWith>)->()) -> Promise<ContinueWith>
 }
 
 // Promise is inspired by JavaScript promise libraries. They are useful for chaining asynchronous
@@ -26,15 +28,27 @@ public protocol PromiseBase {
 // promise.
 public class Promise<T> : PromiseBase {
   private let lock = Lock()
-  private var callbacks: [(T!, NSError?)->()] = []
-  private var val: T? = nil
-  private var err: NSError? = nil
+  private var callbacks: [(Promise)->()] = []
+  
+  public var val: T! = nil
+  public var err: NSError? = nil
+  public var cancelled: Bool = false
   private var resolved = false
   
   public init() {}
   public convenience init(_ val: T) {
     self.init()
     resolve(val)
+  }
+  
+  private func whenResolved(block: (Promise)->()) {
+    lock.synchronized {
+      if self.resolved {
+        block(self)
+      } else {
+        self.callbacks.append(block)
+      }
+    }
   }
   
   // then<Promise<Y>> accepts a callback that returns a promise.
@@ -45,14 +59,14 @@ public class Promise<T> : PromiseBase {
   // are lazily evaluated.
   public func then<Y : PromiseBase>(block: (T!) -> Y) -> Promise<Y.ContinueWith> {
     let chained = Promise<Y.ContinueWith>()
-    always { [unowned self](val, err) in
-      if err != nil {
-        chained.fail(err)
+    whenResolved { promise in
+      if promise.cancelled {
+        chained.cancel()
+      } else if promise.err != nil {
+        chained.fail(promise.err)
       } else {
-        // note: do not inline this call or it won't be called if chained is GCd
-        let nested = block(self.val)
-        nested.always { [unowned self](val, err) in
-          chained.notify(val, err)
+        block(promise.val).always { promise in
+          chained.notify(promise.val, promise.err, false)
         }
       }
     }
@@ -65,13 +79,13 @@ public class Promise<T> : PromiseBase {
   // the callback is never called and the failure propagates to the returned promise.
   public func then<Y>(block: (T!)->(Y)) -> Promise<Y> {
     let chained = Promise<Y>()
-    always { [unowned self](val, err) in
-      if err != nil {
-        chained.fail(err)
+    whenResolved { promise in
+      if promise.cancelled {
+        chained.cancel()
+      } else if promise.err != nil {
+        chained.fail(promise.err)
       } else {
-        // note: do not inline this call or it won't be called if chained is GCd
-        let res = block(self.val)
-        chained.resolve(res)
+        chained.resolve(block(promise.val))
       }
     }
     return chained
@@ -79,47 +93,80 @@ public class Promise<T> : PromiseBase {
   
   // error accepts a callback to be executed when a promise fails
   // (immediately if the promise has been failed previously). It returns a copy of self.
-  public func error(block: (NSError!)->()) -> Promise<T> {
-    always { [unowned self](val, err) in
-      if err != nil {
-        block(err)
+  public func error(block: (NSError!)->(T)) -> Promise {
+    var chained = Promise()
+    whenResolved { promise in
+      if promise.cancelled {
+        chained.cancel()
+      } else if promise.err != nil {
+        chained.resolve(block(promise.err))
+      } else {
+        chained.resolve(promise.val)
+      }
+    }
+    return chained
+  }
+  
+  public func error(block: (NSError!) ->()) -> Promise {
+    whenResolved { promise in
+      if promise.err != nil {
+        block(promise.err)
       }
     }
     return self
+  }
+  
+  public func cancelled(block: ()->()) {
+    whenResolved { promise in
+      if promise.cancelled {
+        block()
+      }
+    }
   }
   
   // Always accepts a block that is called on success or faiulre of a promise and
   // returns self.
-  public func always(block: (T!, NSError?)->()) -> Promise<T> {
-    lock.synchronized {
-      if self.resolved {
-        block(self.val, self.err)
-      } else {
-        self.callbacks.append(block)
-      }
+  public func always<Y>(block: (Promise)->(Y)) -> Promise<Y> {
+    var chained = Promise<Y>()
+    whenResolved { promise in
+      chained.resolve(block(promise))
+    }
+    return chained
+  }
+  
+  public func always(block: (Promise) -> ()) -> Self {
+    whenResolved { promise in
+      block(promise)
     }
     return self
   }
   
-  private func notify(val: T!, _ err: NSError?) {
+  private func notify(val: T!, _ err: NSError?, _ cancelled: Bool) {
     lock.synchronized {[unowned self] in
+      if self.cancelled || cancelled && self.resolved {
+        return
+      }
       assert(!self.resolved, "Can only resolve or fail a promise once")
 
       self.resolved = true
       self.val = val
       self.err = err
+      self.cancelled = cancelled
       
       for callback in self.callbacks {
-        callback(val, err)
+        callback(self)
       }
     }
   }
   
+  public func cancel() {
+    notify(nil, nil, true)
+  }
   public func resolve(val: T!) {
-    notify(val, nil)
+    notify(val, nil, false)
   }
   
   public func fail(err: NSError!) {
-    notify(nil, err)
+    notify(nil, err, false)
   }
 }

@@ -10,6 +10,7 @@
 		E91D51D61B2231CC00286C8E /* Griddle.h in Headers */ = {isa = PBXBuildFile; fileRef = E91D51D51B2231CC00286C8E /* Griddle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E91D51DC1B2231CC00286C8E /* Griddle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E91D51D01B2231CC00286C8E /* Griddle.framework */; };
 		E91D51E31B2231CC00286C8E /* GriddleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91D51E21B2231CC00286C8E /* GriddleTests.swift */; };
+		FE66A9DEC755EFD8C4FAB4C4 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E644AFF7013F1EE046DA97D /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +24,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E644AFF7013F1EE046DA97D /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E3445E3AFD9E62E720DAB39 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CBDD82D2C0FD41AE26186724 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E91D51D01B2231CC00286C8E /* Griddle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Griddle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E91D51D41B2231CC00286C8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E91D51D51B2231CC00286C8E /* Griddle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Griddle.h; sourceTree = "<group>"; };
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE66A9DEC755EFD8C4FAB4C4 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,12 +55,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19CC817E48CD0F77E23A19C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBDD82D2C0FD41AE26186724 /* Pods.debug.xcconfig */,
+				4E3445E3AFD9E62E720DAB39 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D4B7FBE4D955AA8EFE37D31C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E644AFF7013F1EE046DA97D /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E91D51C61B2231CC00286C8E = {
 			isa = PBXGroup;
 			children = (
 				E91D51D21B2231CC00286C8E /* Griddle */,
 				E91D51DF1B2231CC00286C8E /* GriddleTests */,
 				E91D51D11B2231CC00286C8E /* Products */,
+				19CC817E48CD0F77E23A19C1 /* Pods */,
+				D4B7FBE4D955AA8EFE37D31C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,10 +144,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E91D51E61B2231CC00286C8E /* Build configuration list for PBXNativeTarget "Griddle" */;
 			buildPhases = (
+				287E4E40C2186F16665F1D81 /* Check Pods Manifest.lock */,
 				E91D51CB1B2231CC00286C8E /* Sources */,
 				E91D51CC1B2231CC00286C8E /* Frameworks */,
 				E91D51CD1B2231CC00286C8E /* Headers */,
 				E91D51CE1B2231CC00286C8E /* Resources */,
+				DBD061CD8BC39A8FCBCFAD9D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -203,6 +229,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		287E4E40C2186F16665F1D81 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DBD061CD8BC39A8FCBCFAD9D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E91D51CB1B2231CC00286C8E /* Sources */ = {
@@ -322,6 +381,7 @@
 		};
 		E91D51E71B2231CC00286C8E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBDD82D2C0FD41AE26186724 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -337,6 +397,7 @@
 		};
 		E91D51E81B2231CC00286C8E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E3445E3AFD9E62E720DAB39 /* Pods.release.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -399,6 +460,7 @@
 				E91D51E81B2231CC00286C8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E91D51E91B2231CC00286C8E /* Build configuration list for PBXNativeTarget "GriddleTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +469,7 @@
 				E91D51EB1B2231CC00286C8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,7 +10,7 @@
 #define COCOAPODS_POD_AVAILABLE_Eventful
 #define COCOAPODS_VERSION_MAJOR_Eventful 0
 #define COCOAPODS_VERSION_MINOR_Eventful 0
-#define COCOAPODS_VERSION_PATCH_Eventful 1
+#define COCOAPODS_VERSION_PATCH_Eventful 2
 
 // Firebase
 #define COCOAPODS_POD_AVAILABLE_Firebase

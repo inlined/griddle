@@ -1,6 +1,0 @@
-framework module Eventful {
-  umbrella header "Pods-GriddleTests-Eventful-umbrella.h"
-
-  export *
-  module * { export * }
-}
