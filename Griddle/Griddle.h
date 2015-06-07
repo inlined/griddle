@@ -2,7 +2,7 @@
 //  Griddle.h
 //  Griddle
 //
-//  Created by Thomas Bouldin on 6/5/15.
+//  Created by Thomas Bouldin on 6/6/15.
 //  Copyright (c) 2015 Inlined. All rights reserved.
 //
 
@@ -17,3 +17,4 @@ FOUNDATION_EXPORT const unsigned char GriddleVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <Griddle/PublicHeader.h>
 
 
+#import "Firebase.h"
