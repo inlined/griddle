@@ -7,18 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E91D51D61B2231CC00286C8E /* Griddle.h in Headers */ = {isa = PBXBuildFile; fileRef = E91D51D51B2231CC00286C8E /* Griddle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E91D51DC1B2231CC00286C8E /* Griddle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E91D51D01B2231CC00286C8E /* Griddle.framework */; };
-		E91D51E31B2231CC00286C8E /* GriddleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91D51E21B2231CC00286C8E /* GriddleTests.swift */; };
-		FE66A9DEC755EFD8C4FAB4C4 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E644AFF7013F1EE046DA97D /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		E90581151B23C8610093204B /* Griddle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E905810A1B23C8610093204B /* Griddle.framework */; };
+		E905811C1B23C8610093204B /* GriddleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E905811B1B23C8610093204B /* GriddleTests.swift */; };
+		E90581231B23C89C0093204B /* ManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93441291B23C47400682CC9 /* ManagedObject.swift */; };
+		E90581241B23C8BA0093204B /* Griddle.h in Headers */ = {isa = PBXBuildFile; fileRef = E91D51D51B2231CC00286C8E /* Griddle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E90581301B23C8EC0093204B /* FAuthData.h in Headers */ = {isa = PBXBuildFile; fileRef = E90581251B23C8EC0093204B /* FAuthData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E90581311B23C8EC0093204B /* FAuthType.h in Headers */ = {isa = PBXBuildFile; fileRef = E90581261B23C8EC0093204B /* FAuthType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E90581321B23C8EC0093204B /* FConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = E90581271B23C8EC0093204B /* FConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E90581331B23C8EC0093204B /* FDataSnapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = E90581281B23C8EC0093204B /* FDataSnapshot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E90581341B23C8EC0093204B /* FEventType.h in Headers */ = {isa = PBXBuildFile; fileRef = E90581291B23C8EC0093204B /* FEventType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E90581351B23C8EC0093204B /* Firebase.h in Headers */ = {isa = PBXBuildFile; fileRef = E905812A1B23C8EC0093204B /* Firebase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E90581361B23C8EC0093204B /* FirebaseApp.h in Headers */ = {isa = PBXBuildFile; fileRef = E905812B1B23C8EC0093204B /* FirebaseApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E90581371B23C8EC0093204B /* FirebaseServerValue.h in Headers */ = {isa = PBXBuildFile; fileRef = E905812C1B23C8EC0093204B /* FirebaseServerValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E90581381B23C8EC0093204B /* FMutableData.h in Headers */ = {isa = PBXBuildFile; fileRef = E905812D1B23C8EC0093204B /* FMutableData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E90581391B23C8EC0093204B /* FQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = E905812E1B23C8EC0093204B /* FQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E905813A1B23C8EC0093204B /* FTransactionResult.h in Headers */ = {isa = PBXBuildFile; fileRef = E905812F1B23C8EC0093204B /* FTransactionResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E905813F1B23C9AA0093204B /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E905813E1B23C9AA0093204B /* libicucore.dylib */; };
+		E90581411B23C9CE0093204B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E90581401B23C9CE0093204B /* SystemConfiguration.framework */; };
+		E90581431B23C9D90093204B /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E90581421B23C9D90093204B /* libc++.dylib */; };
+		E90581451B23C9E90093204B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E90581441B23C9E90093204B /* CFNetwork.framework */; };
+		E90581471B23C9EE0093204B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E90581461B23C9EE0093204B /* Security.framework */; };
+		E90581491B23CA250093204B /* Eventful.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E90581481B23CA250093204B /* Eventful.framework */; };
+		E905814B1B23CA350093204B /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E905814A1B23CA350093204B /* Firebase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E91D51DD1B2231CC00286C8E /* PBXContainerItemProxy */ = {
+		E90581161B23C8610093204B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E91D51C71B2231CC00286C8E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E91D51CF1B2231CC00286C8E;
+			remoteGlobalIDString = E90581091B23C8610093204B;
 			remoteInfo = Griddle;
 		};
 /* End PBXContainerItemProxy section */
@@ -27,28 +45,54 @@
 		1E644AFF7013F1EE046DA97D /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E3445E3AFD9E62E720DAB39 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CBDD82D2C0FD41AE26186724 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		E91D51D01B2231CC00286C8E /* Griddle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Griddle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E905810A1B23C8610093204B /* Griddle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Griddle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E90581141B23C8610093204B /* GriddleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GriddleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E905811A1B23C8610093204B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E905811B1B23C8610093204B /* GriddleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GriddleTests.swift; sourceTree = "<group>"; };
+		E90581251B23C8EC0093204B /* FAuthData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FAuthData.h; path = ../Pods/Firebase/Firebase.framework/Versions/A/Headers/FAuthData.h; sourceTree = "<group>"; };
+		E90581261B23C8EC0093204B /* FAuthType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FAuthType.h; path = ../Pods/Firebase/Firebase.framework/Versions/A/Headers/FAuthType.h; sourceTree = "<group>"; };
+		E90581271B23C8EC0093204B /* FConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FConfig.h; path = ../Pods/Firebase/Firebase.framework/Versions/A/Headers/FConfig.h; sourceTree = "<group>"; };
+		E90581281B23C8EC0093204B /* FDataSnapshot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FDataSnapshot.h; path = ../Pods/Firebase/Firebase.framework/Versions/A/Headers/FDataSnapshot.h; sourceTree = "<group>"; };
+		E90581291B23C8EC0093204B /* FEventType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FEventType.h; path = ../Pods/Firebase/Firebase.framework/Versions/A/Headers/FEventType.h; sourceTree = "<group>"; };
+		E905812A1B23C8EC0093204B /* Firebase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = ../Pods/Firebase/Firebase.framework/Versions/A/Headers/Firebase.h; sourceTree = "<group>"; };
+		E905812B1B23C8EC0093204B /* FirebaseApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FirebaseApp.h; path = ../Pods/Firebase/Firebase.framework/Versions/A/Headers/FirebaseApp.h; sourceTree = "<group>"; };
+		E905812C1B23C8EC0093204B /* FirebaseServerValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FirebaseServerValue.h; path = ../Pods/Firebase/Firebase.framework/Versions/A/Headers/FirebaseServerValue.h; sourceTree = "<group>"; };
+		E905812D1B23C8EC0093204B /* FMutableData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FMutableData.h; path = ../Pods/Firebase/Firebase.framework/Versions/A/Headers/FMutableData.h; sourceTree = "<group>"; };
+		E905812E1B23C8EC0093204B /* FQuery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FQuery.h; path = ../Pods/Firebase/Firebase.framework/Versions/A/Headers/FQuery.h; sourceTree = "<group>"; };
+		E905812F1B23C8EC0093204B /* FTransactionResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FTransactionResult.h; path = ../Pods/Firebase/Firebase.framework/Versions/A/Headers/FTransactionResult.h; sourceTree = "<group>"; };
+		E905813C1B23C98E0093204B /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = "Pods/../build/Debug-iphoneos/Pods.framework"; sourceTree = "<group>"; };
+		E905813E1B23C9AA0093204B /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		E90581401B23C9CE0093204B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E90581421B23C9D90093204B /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		E90581441B23C9E90093204B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		E90581461B23C9EE0093204B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E90581481B23CA250093204B /* Eventful.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eventful.framework; path = "Pods/../build/Debug-iphoneos/Pods/Eventful.framework"; sourceTree = "<group>"; };
+		E905814A1B23CA350093204B /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = Pods/Firebase/Firebase.framework; sourceTree = "<group>"; };
 		E91D51D41B2231CC00286C8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E91D51D51B2231CC00286C8E /* Griddle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Griddle.h; sourceTree = "<group>"; };
-		E91D51DB1B2231CC00286C8E /* GriddleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GriddleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E91D51E11B2231CC00286C8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E91D51E21B2231CC00286C8E /* GriddleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GriddleTests.swift; sourceTree = "<group>"; };
+		E93441291B23C47400682CC9 /* ManagedObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E91D51CC1B2231CC00286C8E /* Frameworks */ = {
+		E90581061B23C8610093204B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE66A9DEC755EFD8C4FAB4C4 /* Pods.framework in Frameworks */,
+				E90581491B23CA250093204B /* Eventful.framework in Frameworks */,
+				E90581471B23C9EE0093204B /* Security.framework in Frameworks */,
+				E90581451B23C9E90093204B /* CFNetwork.framework in Frameworks */,
+				E90581431B23C9D90093204B /* libc++.dylib in Frameworks */,
+				E90581411B23C9CE0093204B /* SystemConfiguration.framework in Frameworks */,
+				E905814B1B23CA350093204B /* Firebase.framework in Frameworks */,
+				E905813F1B23C9AA0093204B /* libicucore.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E91D51D81B2231CC00286C8E /* Frameworks */ = {
+		E90581111B23C8610093204B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E91D51DC1B2231CC00286C8E /* Griddle.framework in Frameworks */,
+				E90581151B23C8610093204B /* Griddle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,16 +111,59 @@
 		D4B7FBE4D955AA8EFE37D31C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E905814A1B23CA350093204B /* Firebase.framework */,
+				E90581481B23CA250093204B /* Eventful.framework */,
+				E90581401B23C9CE0093204B /* SystemConfiguration.framework */,
+				E90581461B23C9EE0093204B /* Security.framework */,
+				E90581441B23C9E90093204B /* CFNetwork.framework */,
+				E90581421B23C9D90093204B /* libc++.dylib */,
+				E905813E1B23C9AA0093204B /* libicucore.dylib */,
+				E905813C1B23C98E0093204B /* Pods.framework */,
 				1E644AFF7013F1EE046DA97D /* Pods.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E90581181B23C8610093204B /* GriddleTests */ = {
+			isa = PBXGroup;
+			children = (
+				E905811B1B23C8610093204B /* GriddleTests.swift */,
+				E90581191B23C8610093204B /* Supporting Files */,
+			);
+			path = GriddleTests;
+			sourceTree = "<group>";
+		};
+		E90581191B23C8610093204B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E905811A1B23C8610093204B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E905813B1B23C8F70093204B /* ReimportFirebaseFilesToFixSwiftImports */ = {
+			isa = PBXGroup;
+			children = (
+				E90581251B23C8EC0093204B /* FAuthData.h */,
+				E90581261B23C8EC0093204B /* FAuthType.h */,
+				E90581271B23C8EC0093204B /* FConfig.h */,
+				E90581281B23C8EC0093204B /* FDataSnapshot.h */,
+				E90581291B23C8EC0093204B /* FEventType.h */,
+				E905812A1B23C8EC0093204B /* Firebase.h */,
+				E905812B1B23C8EC0093204B /* FirebaseApp.h */,
+				E905812C1B23C8EC0093204B /* FirebaseServerValue.h */,
+				E905812D1B23C8EC0093204B /* FMutableData.h */,
+				E905812E1B23C8EC0093204B /* FQuery.h */,
+				E905812F1B23C8EC0093204B /* FTransactionResult.h */,
+			);
+			name = ReimportFirebaseFilesToFixSwiftImports;
 			sourceTree = "<group>";
 		};
 		E91D51C61B2231CC00286C8E = {
 			isa = PBXGroup;
 			children = (
 				E91D51D21B2231CC00286C8E /* Griddle */,
-				E91D51DF1B2231CC00286C8E /* GriddleTests */,
+				E90581181B23C8610093204B /* GriddleTests */,
 				E91D51D11B2231CC00286C8E /* Products */,
 				19CC817E48CD0F77E23A19C1 /* Pods */,
 				D4B7FBE4D955AA8EFE37D31C /* Frameworks */,
@@ -86,8 +173,8 @@
 		E91D51D11B2231CC00286C8E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E91D51D01B2231CC00286C8E /* Griddle.framework */,
-				E91D51DB1B2231CC00286C8E /* GriddleTests.xctest */,
+				E905810A1B23C8610093204B /* Griddle.framework */,
+				E90581141B23C8610093204B /* GriddleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				E91D51D51B2231CC00286C8E /* Griddle.h */,
+				E93441291B23C47400682CC9 /* ManagedObject.swift */,
 				E91D51D31B2231CC00286C8E /* Supporting Files */,
 			);
 			path = Griddle;
@@ -104,24 +192,8 @@
 		E91D51D31B2231CC00286C8E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E905813B1B23C8F70093204B /* ReimportFirebaseFilesToFixSwiftImports */,
 				E91D51D41B2231CC00286C8E /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E91D51DF1B2231CC00286C8E /* GriddleTests */ = {
-			isa = PBXGroup;
-			children = (
-				E91D51E21B2231CC00286C8E /* GriddleTests.swift */,
-				E91D51E01B2231CC00286C8E /* Supporting Files */,
-			);
-			path = GriddleTests;
-			sourceTree = "<group>";
-		};
-		E91D51E01B2231CC00286C8E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E91D51E11B2231CC00286C8E /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -129,27 +201,36 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		E91D51CD1B2231CC00286C8E /* Headers */ = {
+		E90581071B23C8610093204B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E91D51D61B2231CC00286C8E /* Griddle.h in Headers */,
+				E90581241B23C8BA0093204B /* Griddle.h in Headers */,
+				E90581301B23C8EC0093204B /* FAuthData.h in Headers */,
+				E90581311B23C8EC0093204B /* FAuthType.h in Headers */,
+				E90581321B23C8EC0093204B /* FConfig.h in Headers */,
+				E90581331B23C8EC0093204B /* FDataSnapshot.h in Headers */,
+				E90581341B23C8EC0093204B /* FEventType.h in Headers */,
+				E90581351B23C8EC0093204B /* Firebase.h in Headers */,
+				E90581361B23C8EC0093204B /* FirebaseApp.h in Headers */,
+				E90581371B23C8EC0093204B /* FirebaseServerValue.h in Headers */,
+				E90581381B23C8EC0093204B /* FMutableData.h in Headers */,
+				E90581391B23C8EC0093204B /* FQuery.h in Headers */,
+				E905813A1B23C8EC0093204B /* FTransactionResult.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		E91D51CF1B2231CC00286C8E /* Griddle */ = {
+		E90581091B23C8610093204B /* Griddle */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E91D51E61B2231CC00286C8E /* Build configuration list for PBXNativeTarget "Griddle" */;
+			buildConfigurationList = E905811D1B23C8610093204B /* Build configuration list for PBXNativeTarget "Griddle" */;
 			buildPhases = (
-				287E4E40C2186F16665F1D81 /* Check Pods Manifest.lock */,
-				E91D51CB1B2231CC00286C8E /* Sources */,
-				E91D51CC1B2231CC00286C8E /* Frameworks */,
-				E91D51CD1B2231CC00286C8E /* Headers */,
-				E91D51CE1B2231CC00286C8E /* Resources */,
-				DBD061CD8BC39A8FCBCFAD9D /* Copy Pods Resources */,
+				E90581051B23C8610093204B /* Sources */,
+				E90581061B23C8610093204B /* Frameworks */,
+				E90581071B23C8610093204B /* Headers */,
+				E90581081B23C8610093204B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -157,25 +238,25 @@
 			);
 			name = Griddle;
 			productName = Griddle;
-			productReference = E91D51D01B2231CC00286C8E /* Griddle.framework */;
+			productReference = E905810A1B23C8610093204B /* Griddle.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E91D51DA1B2231CC00286C8E /* GriddleTests */ = {
+		E90581131B23C8610093204B /* GriddleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E91D51E91B2231CC00286C8E /* Build configuration list for PBXNativeTarget "GriddleTests" */;
+			buildConfigurationList = E90581201B23C8610093204B /* Build configuration list for PBXNativeTarget "GriddleTests" */;
 			buildPhases = (
-				E91D51D71B2231CC00286C8E /* Sources */,
-				E91D51D81B2231CC00286C8E /* Frameworks */,
-				E91D51D91B2231CC00286C8E /* Resources */,
+				E90581101B23C8610093204B /* Sources */,
+				E90581111B23C8610093204B /* Frameworks */,
+				E90581121B23C8610093204B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E91D51DE1B2231CC00286C8E /* PBXTargetDependency */,
+				E90581171B23C8610093204B /* PBXTargetDependency */,
 			);
 			name = GriddleTests;
 			productName = GriddleTests;
-			productReference = E91D51DB1B2231CC00286C8E /* GriddleTests.xctest */;
+			productReference = E90581141B23C8610093204B /* GriddleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -187,10 +268,10 @@
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = Inlined;
 				TargetAttributes = {
-					E91D51CF1B2231CC00286C8E = {
+					E90581091B23C8610093204B = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
-					E91D51DA1B2231CC00286C8E = {
+					E90581131B23C8610093204B = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
 				};
@@ -207,21 +288,21 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E91D51CF1B2231CC00286C8E /* Griddle */,
-				E91D51DA1B2231CC00286C8E /* GriddleTests */,
+				E90581091B23C8610093204B /* Griddle */,
+				E90581131B23C8610093204B /* GriddleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E91D51CE1B2231CC00286C8E /* Resources */ = {
+		E90581081B23C8610093204B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E91D51D91B2231CC00286C8E /* Resources */ = {
+		E90581121B23C8610093204B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -230,66 +311,110 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		287E4E40C2186F16665F1D81 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		DBD061CD8BC39A8FCBCFAD9D /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		E91D51CB1B2231CC00286C8E /* Sources */ = {
+		E90581051B23C8610093204B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E90581231B23C89C0093204B /* ManagedObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E91D51D71B2231CC00286C8E /* Sources */ = {
+		E90581101B23C8610093204B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E91D51E31B2231CC00286C8E /* GriddleTests.swift in Sources */,
+				E905811C1B23C8610093204B /* GriddleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E91D51DE1B2231CC00286C8E /* PBXTargetDependency */ = {
+		E90581171B23C8610093204B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E91D51CF1B2231CC00286C8E /* Griddle */;
-			targetProxy = E91D51DD1B2231CC00286C8E /* PBXContainerItemProxy */;
+			target = E90581091B23C8610093204B /* Griddle */;
+			targetProxy = E90581161B23C8610093204B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		E905811E1B23C8610093204B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Pods",
+					"$(PROJECT_DIR)/Pods/Firebase",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Griddle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E905811F1B23C8610093204B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Pods",
+					"$(PROJECT_DIR)/Pods/Firebase",
+				);
+				INFOPLIST_FILE = Griddle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E90581211B23C8610093204B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GriddleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E90581221B23C8610093204B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GriddleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		E91D51E41B2231CC00286C8E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -379,94 +504,30 @@
 			};
 			name = Release;
 		};
-		E91D51E71B2231CC00286C8E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CBDD82D2C0FD41AE26186724 /* Pods.debug.xcconfig */;
-			buildSettings = {
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Griddle/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		E91D51E81B2231CC00286C8E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E3445E3AFD9E62E720DAB39 /* Pods.release.xcconfig */;
-			buildSettings = {
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Griddle/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		E91D51EA1B2231CC00286C8E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = GriddleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		E91D51EB1B2231CC00286C8E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = GriddleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E905811D1B23C8610093204B /* Build configuration list for PBXNativeTarget "Griddle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E905811E1B23C8610093204B /* Debug */,
+				E905811F1B23C8610093204B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E90581201B23C8610093204B /* Build configuration list for PBXNativeTarget "GriddleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E90581211B23C8610093204B /* Debug */,
+				E90581221B23C8610093204B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		E91D51CA1B2231CC00286C8E /* Build configuration list for PBXProject "Griddle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E91D51E41B2231CC00286C8E /* Debug */,
 				E91D51E51B2231CC00286C8E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E91D51E61B2231CC00286C8E /* Build configuration list for PBXNativeTarget "Griddle" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E91D51E71B2231CC00286C8E /* Debug */,
-				E91D51E81B2231CC00286C8E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E91D51E91B2231CC00286C8E /* Build configuration list for PBXNativeTarget "GriddleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E91D51EA1B2231CC00286C8E /* Debug */,
-				E91D51EB1B2231CC00286C8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
