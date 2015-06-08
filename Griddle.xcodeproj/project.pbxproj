@@ -30,6 +30,13 @@
 		E90581471B23C9EE0093204B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E90581461B23C9EE0093204B /* Security.framework */; };
 		E90581491B23CA250093204B /* Eventful.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E90581481B23CA250093204B /* Eventful.framework */; };
 		E905814B1B23CA350093204B /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E905814A1B23CA350093204B /* Firebase.framework */; };
+		E90581551B256ED30093204B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90581541B256ED30093204B /* AppDelegate.swift */; };
+		E90581571B256ED30093204B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90581561B256ED30093204B /* ViewController.swift */; };
+		E905815A1B256ED30093204B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90581581B256ED30093204B /* Main.storyboard */; };
+		E905815C1B256ED30093204B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E905815B1B256ED30093204B /* Images.xcassets */; };
+		E905815F1B256ED30093204B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E905815D1B256ED30093204B /* LaunchScreen.xib */; };
+		E90581721B2573B90093204B /* Griddle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E905810A1B23C8610093204B /* Griddle.framework */; };
+		E90581741B2573CF0093204B /* Eventful.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E90581731B2573CF0093204B /* Eventful.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +76,14 @@
 		E90581461B23C9EE0093204B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		E90581481B23CA250093204B /* Eventful.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eventful.framework; path = "Pods/../build/Debug-iphoneos/Pods/Eventful.framework"; sourceTree = "<group>"; };
 		E905814A1B23CA350093204B /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = Pods/Firebase/Firebase.framework; sourceTree = "<group>"; };
+		E90581501B256ED30093204B /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E90581531B256ED30093204B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E90581541B256ED30093204B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E90581561B256ED30093204B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E90581591B256ED30093204B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E905815B1B256ED30093204B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E905815E1B256ED30093204B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E90581731B2573CF0093204B /* Eventful.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eventful.framework; path = "Pods/../build/Debug-iphoneos/Pods/Eventful.framework"; sourceTree = "<group>"; };
 		E91D51D41B2231CC00286C8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E91D51D51B2231CC00286C8E /* Griddle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Griddle.h; sourceTree = "<group>"; };
 		E93441291B23C47400682CC9 /* ManagedObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedObject.swift; sourceTree = "<group>"; };
@@ -98,6 +113,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E905814D1B256ED30093204B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E90581741B2573CF0093204B /* Eventful.framework in Frameworks */,
+				E90581721B2573B90093204B /* Griddle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -113,6 +137,7 @@
 		D4B7FBE4D955AA8EFE37D31C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E90581731B2573CF0093204B /* Eventful.framework */,
 				E905814A1B23CA350093204B /* Firebase.framework */,
 				E90581481B23CA250093204B /* Eventful.framework */,
 				E90581401B23C9CE0093204B /* SystemConfiguration.framework */,
@@ -161,11 +186,33 @@
 			name = ReimportFirebaseFilesToFixSwiftImports;
 			sourceTree = "<group>";
 		};
+		E90581511B256ED30093204B /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				E90581541B256ED30093204B /* AppDelegate.swift */,
+				E90581561B256ED30093204B /* ViewController.swift */,
+				E90581581B256ED30093204B /* Main.storyboard */,
+				E905815B1B256ED30093204B /* Images.xcassets */,
+				E905815D1B256ED30093204B /* LaunchScreen.xib */,
+				E90581521B256ED30093204B /* Supporting Files */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		E90581521B256ED30093204B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E90581531B256ED30093204B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		E91D51C61B2231CC00286C8E = {
 			isa = PBXGroup;
 			children = (
 				E91D51D21B2231CC00286C8E /* Griddle */,
 				E90581181B23C8610093204B /* GriddleTests */,
+				E90581511B256ED30093204B /* Sample */,
 				E91D51D11B2231CC00286C8E /* Products */,
 				19CC817E48CD0F77E23A19C1 /* Pods */,
 				D4B7FBE4D955AA8EFE37D31C /* Frameworks */,
@@ -177,6 +224,7 @@
 			children = (
 				E905810A1B23C8610093204B /* Griddle.framework */,
 				E90581141B23C8610093204B /* GriddleTests.xctest */,
+				E90581501B256ED30093204B /* Sample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -263,6 +311,23 @@
 			productReference = E90581141B23C8610093204B /* GriddleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		E905814F1B256ED30093204B /* Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E90581701B256ED30093204B /* Build configuration list for PBXNativeTarget "Sample" */;
+			buildPhases = (
+				E905814C1B256ED30093204B /* Sources */,
+				E905814D1B256ED30093204B /* Frameworks */,
+				E905814E1B256ED30093204B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sample;
+			productName = Sample;
+			productReference = E90581501B256ED30093204B /* Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -278,6 +343,9 @@
 					E90581131B23C8610093204B = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
+					E905814F1B256ED30093204B = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
 				};
 			};
 			buildConfigurationList = E91D51CA1B2231CC00286C8E /* Build configuration list for PBXProject "Griddle" */;
@@ -286,6 +354,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = E91D51C61B2231CC00286C8E;
 			productRefGroup = E91D51D11B2231CC00286C8E /* Products */;
@@ -294,6 +363,7 @@
 			targets = (
 				E90581091B23C8610093204B /* Griddle */,
 				E90581131B23C8610093204B /* GriddleTests */,
+				E905814F1B256ED30093204B /* Sample */,
 			);
 		};
 /* End PBXProject section */
@@ -310,6 +380,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E905814E1B256ED30093204B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E905815A1B256ED30093204B /* Main.storyboard in Resources */,
+				E905815F1B256ED30093204B /* LaunchScreen.xib in Resources */,
+				E905815C1B256ED30093204B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +445,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E905814C1B256ED30093204B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E90581571B256ED30093204B /* ViewController.swift in Sources */,
+				E90581551B256ED30093204B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -374,6 +463,25 @@
 			targetProxy = E90581161B23C8610093204B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E90581581B256ED30093204B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E90581591B256ED30093204B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E905815D1B256ED30093204B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E905815E1B256ED30093204B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E905811E1B23C8610093204B /* Debug */ = {
@@ -450,6 +558,38 @@
 				);
 				INFOPLIST_FILE = GriddleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E905816C1B256ED30093204B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Pods",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Sample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E905816D1B256ED30093204B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Pods",
+				);
+				INFOPLIST_FILE = Sample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -563,6 +703,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		E90581701B256ED30093204B /* Build configuration list for PBXNativeTarget "Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E905816C1B256ED30093204B /* Debug */,
+				E905816D1B256ED30093204B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		E91D51CA1B2231CC00286C8E /* Build configuration list for PBXProject "Griddle" */ = {
 			isa = XCConfigurationList;

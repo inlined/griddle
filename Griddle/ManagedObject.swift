@@ -14,12 +14,16 @@ protocol UnsafeYielder {
 }
 
 public class Property<T : AnyObject> : Observable<T>, UnsafeYielder {
-  let target: ManagedObject
+  var target: ManagedObject!
   let keyPath: String
   
-  init(target: ManagedObject, keyPath: String) {
-    self.target = target
+  public init(keyPath: String) {
     self.keyPath = keyPath
+  }
+  
+  public func bind(target: ManagedObject) {
+    assert(self.target == nil)
+    self.target = target
   }
   
   func yieldUnsafe(val: AnyObject!) {
@@ -91,6 +95,7 @@ public class ManagedObject {
     }
   }
   
+  /*
   public func property<T>(keyPath: String) -> Property<T> {
     if let existing = yielders[keyPath] {
       return existing as! Property<T>
@@ -98,5 +103,5 @@ public class ManagedObject {
     let newProp = Property<T>(target:self, keyPath:keyPath)
     yielders[keyPath] = newProp
     return newProp
-  }
+  }*/
 }
