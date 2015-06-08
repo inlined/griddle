@@ -37,10 +37,18 @@
 		E905815F1B256ED30093204B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E905815D1B256ED30093204B /* LaunchScreen.xib */; };
 		E90581721B2573B90093204B /* Griddle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E905810A1B23C8610093204B /* Griddle.framework */; };
 		E90581741B2573CF0093204B /* Eventful.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E90581731B2573CF0093204B /* Eventful.framework */; };
+		E90581761B25D1B40093204B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E90581751B25D1B40093204B /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		E90581161B23C8610093204B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E91D51C71B2231CC00286C8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E90581091B23C8610093204B;
+			remoteInfo = Griddle;
+		};
+		E90581771B25D3220093204B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E91D51C71B2231CC00286C8E /* Project object */;
 			proxyType = 1;
@@ -84,6 +92,7 @@
 		E905815B1B256ED30093204B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E905815E1B256ED30093204B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E90581731B2573CF0093204B /* Eventful.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eventful.framework; path = "Pods/../build/Debug-iphoneos/Pods/Eventful.framework"; sourceTree = "<group>"; };
+		E90581751B25D1B40093204B /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = "Pods/../build/Debug-iphoneos/Pods.framework"; sourceTree = "<group>"; };
 		E91D51D41B2231CC00286C8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E91D51D51B2231CC00286C8E /* Griddle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Griddle.h; sourceTree = "<group>"; };
 		E93441291B23C47400682CC9 /* ManagedObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedObject.swift; sourceTree = "<group>"; };
@@ -117,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E90581761B25D1B40093204B /* Pods.framework in Frameworks */,
 				E90581741B2573CF0093204B /* Eventful.framework in Frameworks */,
 				E90581721B2573B90093204B /* Griddle.framework in Frameworks */,
 			);
@@ -137,6 +147,7 @@
 		D4B7FBE4D955AA8EFE37D31C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E90581751B25D1B40093204B /* Pods.framework */,
 				E90581731B2573CF0093204B /* Eventful.framework */,
 				E905814A1B23CA350093204B /* Firebase.framework */,
 				E90581481B23CA250093204B /* Eventful.framework */,
@@ -322,6 +333,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				E90581781B25D3220093204B /* PBXTargetDependency */,
 			);
 			name = Sample;
 			productName = Sample;
@@ -462,6 +474,11 @@
 			target = E90581091B23C8610093204B /* Griddle */;
 			targetProxy = E90581161B23C8610093204B /* PBXContainerItemProxy */;
 		};
+		E90581781B25D3220093204B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E90581091B23C8610093204B /* Griddle */;
+			targetProxy = E90581771B25D3220093204B /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -492,12 +509,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-					"$(PROJECT_DIR)/build/Debug-iphoneos/Pods",
-					"$(PROJECT_DIR)/Pods/Firebase",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -518,12 +530,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-					"$(PROJECT_DIR)/build/Debug-iphoneos/Pods",
-					"$(PROJECT_DIR)/Pods/Firebase",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Griddle/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -566,10 +573,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos/Pods",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -584,10 +588,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos/Pods",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Sample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -711,6 +712,7 @@
 				E905816D1B256ED30093204B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E91D51CA1B2231CC00286C8E /* Build configuration list for PBXProject "Griddle" */ = {
 			isa = XCConfigurationList;
