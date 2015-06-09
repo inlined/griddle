@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Sample
+//  Examples
 //
-//  Created by Thomas Bouldin on 6/7/15.
+//  Created by Thomas Bouldin on 6/9/15.
 //  Copyright (c) 2015 Inlined. All rights reserved.
 //
 

@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  Sample
+//  Examples
 //
-//  Created by Thomas Bouldin on 6/7/15.
+//  Created by Thomas Bouldin on 6/9/15.
 //  Copyright (c) 2015 Inlined. All rights reserved.
 //
 
@@ -36,17 +36,17 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
   }
-
+  
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
-
+  
   @IBAction func setURL(sender: AnyObject) {
     let model = Profile(atURL: url.text)
     model.name ~> name
     model.handle ~> handle
   }
-
+  
 }
 
