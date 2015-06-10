@@ -15,6 +15,3 @@ FOUNDATION_EXPORT double GriddleVersionNumber;
 FOUNDATION_EXPORT const unsigned char GriddleVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Griddle/PublicHeader.h>
-
-
-#import "Firebase.h"

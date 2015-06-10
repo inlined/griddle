@@ -8,6 +8,7 @@
 
 import Foundation
 import Eventful
+import Firebase
 
 protocol UnsafeYielder {
   func yieldUnsafe(val: AnyObject!)
